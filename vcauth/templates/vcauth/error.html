@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block title %}Error{% endblock %}
+{% block body %}
+<form action='{% url "logout" %}' method='get'>
+{{error}}
+<input type="submit" value="Logout">
+</form>
+{% endblock %}
