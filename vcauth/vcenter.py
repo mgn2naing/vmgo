@@ -3,7 +3,7 @@ from requests.structures import CaseInsensitiveDict
 import base64
 
 class Vcenter:
-    vcenter_url = 'https://10.5.0.77/rest/com/vmware/cis/session'
+    vcenter_url = 'https://{}/rest/com/vmware/cis/session'
     def get_session(self, email, password):
         self.email = email
         self.password = password
